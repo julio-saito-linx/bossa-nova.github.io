@@ -1,10 +1,17 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+// https://kuler.adobe.com/Wine-Fall-color-theme-3596701/
+$brand-primary:         #5F1A2B;
+$brand-success:         #6F8B78;
+$brand-warning:         #E4D49E;
+$brand-danger:          #C96466;
+$brand-info:            #1D2834;
+
 @import 'sass-bootstrap/lib/bootstrap';
 
 .browsehappy {
     margin: 0.2em 0;
-    background: #ccc;
+    background: #8EC4FF;
     color: #000;
     padding: 0.2em 0;
 }
@@ -51,6 +58,7 @@ body {
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
 }
 
 .jumbotron .btn {
@@ -88,4 +96,32 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+
+.softwareTitle{
+    margin-top: 10px;
+}
+
+.lead{
+    margin-bottom: 0;
+}
+
+.color-icon-1{
+    color: #333;
+}
+.color-icon-2{
+    color: #555;
+}
+.color-icon-3{
+    color: #777;
+}
+.color-icon-4{
+    color: #999;
+}
+.color-icon-5{
+    color: #BBB;
+}
+.title-upper-left{
+    color: $brand-primary;
 }

@@ -321,7 +321,7 @@ module.exports = function (grunt) {
             'compass:server',
             'connect:livereload',
             //'open:server',
-            'watch:livereload'
+            'watch'
         ]);
     });
 
