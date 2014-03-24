@@ -1,0 +1,6 @@
+<% for(var i=0; i<this.collection.models.length; i++) {
+    var repo = this.collection.models[i];%>
+    <h4 class="title"><a href="<%= repo.get('clone_url') %>"><%= repo.get('name') %></a></h4>
+    <p class="desc"><%= repo.get('description') %></p>
+<% } %>
+

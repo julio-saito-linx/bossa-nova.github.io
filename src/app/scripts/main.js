@@ -27,7 +27,14 @@ require.config({
 });
 
 require([
-    'backbone'
-], function (Backbone) {
+    'backbone',
+    './controller/controller'
+], function (Backbone, Controller) {
+
+    var jMain = $('.main');
+    var controller = new Controller({
+        mainElement: jMain
+    });
+
     Backbone.history.start();
 });
